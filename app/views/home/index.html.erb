@@ -1,0 +1,38 @@
+<div class="container">
+
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <h2><b>Welcome to Mother Care &raquo;</b></h2>
+    <h5>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</h5>
+    <p>To see the difference between static and fixed top navbars, just scroll.</p>
+    
+  </div>
+
+  <div class="row">
+  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+  		<div class="thumbnail">
+  			<h5 align="center">Care for your child &raquo;</h5>
+  			<%= image_tag("child.png", :class =>"img-circle")%>
+
+  		</div>
+  	</div>
+  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+  		<div class="thumbnail">
+  			<h5 align="center">Care for your child &raquo;</h5>
+  			<%= image_tag("shirt.png", :class =>"img-circle")%>
+
+  		</div>
+  	</div>
+  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+  		<div class="thumbnail">
+  			<h5 align="center">Care for your child &raquo;</h5>
+  			<%= image_tag("brouse.png", :class =>"img-circle")%>
+
+  		</div>
+  	</div>
+  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+  		<%= render :partial=> 'home/form' %>
+  	</div>
+  </div>
+
+</div> <!-- /container -->

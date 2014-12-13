@@ -1,0 +1,39 @@
+
+<div class="container">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <h2><b>Mother Care &raquo; Sign up</b></h2>
+      <%= form_for(resource, as: resource_name, :class=>"form-horizontal", url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="controls">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, :class=>"form-control", autofocus: true %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %>
+          <% if @validatable %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, :class=>"form-control", autocomplete: "off" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, :class=>"form-control", autocomplete: "off" %>
+        </div>
+        <br/>
+        <div class="actions">
+          <%= f.submit "Sign up for mother care", :class=>"btn btn-lg btn-success col-md-12" %>
+        </div>
+      <% end %>
+        <br><hr/>
+      <%= render "devise/shared/links" %>
+
+  </div>
+  </div>
+</div> <!-- /container -->
+
