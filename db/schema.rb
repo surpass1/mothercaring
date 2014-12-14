@@ -11,10 +11,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141213215130) do
+ActiveRecord::Schema.define(version: 20141214173737) do
+
+  create_table "do_or_donts", force: true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "first_aids", force: true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "healthcares", force: true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "nurturing_mothers", force: true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", force: true do |t|
     t.text     "views"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "prenancy_mothers", force: true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
