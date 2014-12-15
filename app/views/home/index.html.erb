@@ -13,11 +13,11 @@
   		<%= image_tag("feeding.jpg", :class =>"img-circle", :size => "200x100")%>
   	</div>
   	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 well-small">
-  		<h4 class="badge"><b>Nurturing mother</b></h4>
+  		<h4 class="badge"><b>Nurturing mother <%= link_to "Read more", home_pregnant_mother_path %></b></h4>
   		<%= image_tag("nurture.jpg", :class =>"img-circle", :size => "200x100")%>
   	</div>
   	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 well-small">
-  		<h4 class="badge"><b>First aid</b></h4>
+  		<h4 class="badge"><b>First aid <%= link_to "Read more", home_first_aid_path %></b></h4>
   		<%= image_tag("firstaid.jpeg", :class =>"img-circle", :size => "200x100")%>
   	</div>
   	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 well-small">
@@ -31,20 +31,20 @@
   <div class="row">
   	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
   		<div class="thumbnail">
-  			<h4 class="badge"><b>Pregnant mother</b></h4>
+  			<h4 class="badge"><b>Pregnant mother <%= link_to "Read more", home_pregnant_mother_path %> </b></h4>
   			<%= image_tag("pregnant.jpg", :size => "100x60")%>
   		</div>
   	</div>
   	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
   		<div class="thumbnail">
-  			<h5 align="center">Dress code &raquo;</h5>
+  			<h5 align="center">Dress code &raquo; <%= link_to " Read more", home_health_path%></h5>
   			<%= image_tag("child.png", :class =>"img-circle")%>
 
   		</div>
   	</div>
   	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
   		<div class="thumbnail">
-  			<h5 align="center">Dress code &raquo;</h5>
+  			<h5 align="center">Dress code &raquo; <%= link_to " Read more", home_health_path%></h5>
   			<%= image_tag("brouse.png", :class =>"img-circle")%>
 
   		</div>
