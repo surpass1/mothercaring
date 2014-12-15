@@ -11,18 +11,17 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "About", home_about_path %></li>
             <li><%= link_to "Contact", home_contact_path %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Dos and Donts</a></li>
-                <li><a href="#">Feeding Tips</a></li>
-                <li><a href="#">First aid Tips</a></li>
+                <li><%= link_to "Health care", home_health_path%></li>
+                <li><%= link_to "First aid", home_first_aid_path %></li>
                 <li class="divider"></li>
-                <li><a href="#">Pregnant mothers</a></li>
-                <li><a href="#">Raising up a child</a></li>
+                <li><%= link_to "Pregnant mothers", home_pregnant_mother_path %></li>
+                <li><%= link_to "Nurturing mothers", home_nurturing_mother_path %></li>
               </ul>
             </li>
           </ul>

@@ -16,4 +16,27 @@ class HomeController < ApplicationController
     @post.save
   end
 
+  def about
+  end
+
+  def contact
+  end
+
+  def nurturing_mother
+  	@nurture = NurturingMother.all
+  end
+
+  def pregnant_mother
+  	@pregnant = PrenancyMother.all
+  end
+
+  def first_aid
+  	@aid = FirstAid.all
+  end
+
+  def health
+  	@health = Healthcare.all
+  end
+
+  
 end
