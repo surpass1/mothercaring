@@ -1,7 +1,58 @@
+<section id="advertisement">
+	<div class="container">
+		<img src="" alt="" />
+	</div>
+</section>
+
 <section>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
+				<div class="left-sidebar">
+					<h2>Category</h2>
+					<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+										<span class="badge pull-right"><i class="caret"></i></span>
+										Inspirations
+									</a>
+								</h4>
+							</div>
+							<div id="sportswear" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li><a href="">Seven laws of success </a></li>
+										<li><a href="">Never give up</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+										<span class="badge pull-right"><i class="caret"></i></span>
+										A level books
+									</a>
+								</h4>
+							</div>
+							<div id="mens" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li><a href="">Concise Math</a></li>
+										<li><a href="">Tranta</a></li>
+										<li><a href="">Understanding mechanics</a></li>
+										<li><a href="">Pure Math</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>		
 
 			</div>
 
@@ -15,15 +66,15 @@
 							<div class="single-products">
 								<div class="productinfo text-center">
 									<%= image_tag bk.avatar.url %>
-									<h2><%=bk.price %></h2>
+									<h2>SHS:<%=bk.price %></h2>
 									<p><%=bk.description %></p>
 									
 								</div>
 								<div class="product-overlay">
 									<div class="overlay-content">
-										<h2><%=bk.price %></h2>
+										<h2>SHS:<%=bk.price %></h2>
 										<p><%=bk.description %></p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make your order</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class=""></i>Make your order</a>
 									</div>
 								</div>
 							</div>
@@ -37,5 +88,6 @@
 		</div>
 	</div>
 </section>
+<%= paginate @books %>
 
 			

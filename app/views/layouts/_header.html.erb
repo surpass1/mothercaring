@@ -17,17 +17,18 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><%= link_to "Health care"%></li>
-                <li><%= link_to "First aid" %></li>
+                <li><%= link_to "Book category1"%></li>
+                <li><%= link_to "Book category2" %></li>
                 <li class="divider"></li>
-                <li><%= link_to "Pregnant mothers" %></li>
-                <li><%= link_to "Nurturing mothers" %></li>
+                <li><%= link_to "Book category3" %></li>
+                <li><%= link_to "Book category4" %></li>
               </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
               <li><%= link_to "Sign out", destroy_user_session_path, :method => "delete" %></li>
+              <li><%= link_to "View orders" %></li>
             <% else %>
               <li><%= link_to "Sign in", new_user_session_path %></li>
               <li><%= link_to "Sign up", new_user_registration_path %></li>

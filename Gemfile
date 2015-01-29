@@ -20,6 +20,7 @@ gem 'less-rails'
 gem 'heroku'
 
 gem 'rails_admin'
+gem 'kaminari'
 
 gem 'puma'
 
