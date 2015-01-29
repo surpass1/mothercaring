@@ -1,3 +1,41 @@
-<div style="margin-top:50px;">
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+
+			</div>
+
+			<div class="col-sm-9 padding-right">
+				<div class="features_items"><!--features_items-->
+					<h2 class="title text-center">Features Books</h2>
+					<%@books.each_slice(3) do |book|%>
+					<%book.each do |bk|%>
+					<div class="col-sm-4">
+						<div class="product-image-wrapper">
+							<div class="single-products">
+								<div class="productinfo text-center">
+									<%= image_tag bk.avatar.url %>
+									<h2><%=bk.price %></h2>
+									<p><%=bk.description %></p>
+									
+								</div>
+								<div class="product-overlay">
+									<div class="overlay-content">
+										<h2><%=bk.price %></h2>
+										<p><%=bk.description %></p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Make your order</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<% end %>
+					<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+
+			

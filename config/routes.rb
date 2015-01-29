@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :books
 
   devise_for :users
-  mount RailsAdmin::Engine => '/mother', as: 'rails_admin'
+  mount RailsAdmin::Engine => '/book', as: 'rails_admin'
   
 
   get 'home/about'
